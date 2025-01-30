@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver Blog URL Extractor</title>
+    <link rel="stylesheet" href="../static/styler_A.css">
+</head>
+<body>
+    <button class="return-btn" onclick="location.href='/'">Return to Main Page</button>
+    <div class="container">
+        <h1>Naver Blog URL Extractor</h1>
+        <div class="input-box">
+            <input type="text" id="keyword" placeholder="Enter keyword" />
+        </div>
+        <div class="input-box">
+            <input type="number" id="number" placeholder="Enter number of pages" />
+        </div>
+        <div class="input-box">
+            <label for="orderBy">Sort By:</label>
+            <select id="orderBy">
+                <option value="sim">Similarity</option>
+                <option value="recentdate">Recent</option>
+            </select>
+        </div>   
+        <button class="button" onclick="extractData()">Extract</button>
+    </div>
+    <script src="/static/fancyscript_A.js"></script>
+</body>
+</html>

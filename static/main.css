@@ -1,0 +1,75 @@
+/* main.css */
+
+/* 
+  Subtle gradient background: 
+  from a soft white-blue (#f9fcff) to light pastel (#e7f0ff) 
+*/
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(135deg, #f9fcff 0%, #e7f0ff 100%);
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 
+  .btn class with a bright purple color, 
+  gentle box-shadow, and transition on hover 
+*/
+.btn {
+    display: inline-block;
+    background-color: #6c63ff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(108, 99, 255, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5148d9;
+    box-shadow: 0 6px 12px rgba(81, 72, 217, 0.3);
+}
+
+/*
+  Example heading styling if you have <h1> 
+  in the page you’d like to stand out 
+*/
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.return-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #2b6cb0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1000; /* Ensures it appears above other content */
+}
+
+.return-btn:hover {
+    background-color: #2c5282;
+}
+
+.hub-image {
+    width: 400px;          /* adjust to your preference */
+    height: auto;          /* let the browser maintain aspect ratio */
+    margin-bottom: 20px;   /* spacing below the image */
+}

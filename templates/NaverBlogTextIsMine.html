@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver Blog Viewer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styler_B.css') }}">
+</head>
+<body>
+    <button class="return-btn" onclick="location.href='/'">Return to Main Page</button>
+    <div class="container">
+        <h1>Naver Blog Viewer</h1>
+        <form id="urlForm">
+            <input type="text" id="blogUrl" placeholder="Enter Naver Blog URL">
+            <button type="submit">Get Text</button>
+        </form>
+        <p id="resultMessage"></p>
+    <div id="textContentWrapper">
+        <div id="extractedText" class="text-box"></div> 
+        <button id="downloadButton" style="display: none;">Download as .txt</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='fancyscript_B.js') }}"></script>
+</body>
+</html>

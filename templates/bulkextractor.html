@@ -1,0 +1,31 @@
+<!-- bulkextractor.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bulk Text Extractor</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body class="bg-gray-800 text-white flex flex-col items-center justify-center h-screen">
+    <h1 class="text-4xl font-bold mb-6">Bulk Text Extractor</h1>
+    <button class="return-btn" onclick="location.href='/'">Return to Main Page</button>
+    <!-- CSV Upload Form -->
+    <form action="/bulk_extract_text" method="POST" enctype="multipart/form-data" class="flex flex-col items-center">
+        <input type="file" name="csv_file" accept=".csv" class="mb-4" required>
+        <button type="submit" class="btn">Upload & Extract</button>
+    </form>
+
+    <!-- JavaScript goes here -->
+    <script>
+        // Optional: Simple client-side validation example
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const fileInput = document.querySelector('input[name="csv_file"]');
+            if (!fileInput.files.length) {
+                e.preventDefault();
+                alert("Please select a CSV file before submitting.");
+            }
+        });
+    </script>
+
+</body>
+</html>
